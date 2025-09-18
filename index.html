@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Lorem Ipsum</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', Arial, sans-serif;
+      background: #fff;
+    }
+    nav {
+      background: #ff7979;
+      width: 100%;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0px 36px;
+      box-sizing: border-box;
+    }
+    .nav-links {
+      display: flex;
+      gap: 36px;
+      padding: 80px;
+    }
+    .nav-links a {
+      color: #141414;
+      text-decoration: none;
+      font-size: 22px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      font-family: 'Montserrat', serif;
+      transition: color 0.2s;
+      padding: 60px;
+      padding-right: 20px;
+      padding-left: 40px;
+      text-align: center;
+    }
+    .nav-links a:hover {
+      color: #fff;
+    }
+    .menu-icon {
+      font-size: 32px;
+      color: #141414;
+      cursor: pointer;
+      padding-right: 150px;
+    }
+    main {
+      width: 100%;
+    }
+    .hero {
+      display: flex;
+      width: 100%;
+      min-height: calc(100vh - 56px);
+    }
+    .left {
+      background: linear-gradient(90deg, #fdf497 0%, #fdf6b3 30%, #ffa8a8 100%);
+      flex: 1 1 50%;
+      padding: 80px 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .left h1 {
+      font-size: 54px;
+      letter-spacing: 4px;
+      font-weight: 700;
+      color: #141414;
+      margin-bottom: 40px;
+    }
+    .left p {
+      font-size: 18px;
+      color: #292929;
+      margin-bottom: 40px;
+      line-height: 1.7;
+      max-width: 600px;
+    }
+    .left .btn-wrapper {
+      margin-top: 20px;
+    }
+    .left button {
+      background: #ff7979;
+      border: none;
+      padding: 18px 60px;
+      color: white;
+      font-size: 16px;
+      font-family: 'Montserrat', Arial, sans-serif;
+      border-radius: 2px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .left button:hover {
+      background: #e86d6d;
+    }
+    .right {
+      flex: 1 1 50%;
+      display: flex;
+      align-items: stretch;
+    }
+    .right img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    @media (max-width: 900px) {
+      .hero {
+        flex-direction: column;
+      }
+      .left, .right {
+        flex: 1 1 100%;
+        padding: 40px 20px;
+      }
+      .left h1 {
+        font-size: 36px;
+      }
+      .left p {
+        font-size: 14px;
+      }
+      .left button {
+        padding: 12px 30px;
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">Order</a>
+      <a href="#">Food</a>
+      <a href="#">Restaurant</a>
+      <a href="#">Testimonials</a>
+      <a href="#">Contact Us</a>
+    </div>
+    <div class="menu-icon">&#9776;</div>
+  </nav>
+  <main>
+    <section class="hero">
+      <div class="left">
+        <h1>LOREM IPSUM</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus <br>id est vitae dolor rhoncus tristique. Maecenas metus quam, <br>rhoncus euismod lorem in, sollicitudin viverra eros. Donec <br>dictum luctus quam ut tristique. Curabitur nec faucibus purus. <br>Quisque congue sem nec justo mollis, in tincidunt erat pretium. <br>Sed pulvinar, massa ac porta viverra.
+        </p>
+        <a href="123.html">
+        <div class="btn-wrapper">
+          <button>Click Me</button>
+        </div>
+        </a>
+      </div>
+      
+      <div class="right">
+        <img src="pexels3.jpg" alt="Burger and Fries">
+
+      </div>
+    </section>
+  </main>
+</body>
+</html>
